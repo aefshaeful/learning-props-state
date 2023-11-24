@@ -5,6 +5,8 @@
   text-align: center;
 }
 
-.card {
-  padding: 2em;
+.button {
+  background-color: gainsboro;
+  width: 200px;
+  padding: 10px;
 }

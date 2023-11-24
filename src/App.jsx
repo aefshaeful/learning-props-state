@@ -1,18 +1,38 @@
-import { useState } from 'react'
-import './App.css'
+/* eslint-disable react/prop-types */
+//import { useState } from 'react'
+import "./App.css";
+import Button from "./propscomponent";
+
+// function App() {
+//   return (
+//     <>
+//       <Button title={"Click Me!"} color={"null"}>
+//         <p>Ini Merupakan Child Componen</p>
+//       </Button>
+//       <Button title={"Click Me!"} color={"red"}>
+//         <p>Ini Merupakan Child Componen</p>
+//       </Button>
+//       <Button title={"Click Me!"} color={"yellow"}>
+//         <p>Ini Merupakan Child Componen</p>
+//       </Button>
+//     </>
+//   );
+// }
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+      <Button title="Click Me!" color="null">
+        <p>Ini Merupakan Child Componen</p>
+      </Button>
+      <Button title="Click Me!" color="red">
+        <p>Ini Merupakan Child Componen</p>
+      </Button>
+      <Button title="Click Me!" color="yellow">
+        <p>Ini Merupakan Child Componen</p>
+      </Button>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
